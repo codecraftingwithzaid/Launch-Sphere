@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Launch Sphere</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- favicon -->
+    <link href="img/favicon.svg" rel="icon" />
+    <link href="img/favicon.svg" rel="apple-touch-icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6 Free CDN (includes brands) -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+      <div class="row gx-0 align-items-center">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-flex flex-wrap">
+            <a href="#" class="text-muted small me-4"
+              ><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A
+              Location</a
+            >
+            <a href="tel:+18052482674" class="text-muted small me-4"
+              ><i class="fas fa-phone-alt text-primary me-2"></i>(805)
+              248-2674</a
+            >
+            <a
+              href="mailto:info@launchsphere.info"
+              class="text-muted small me-0"
+              ><i class="fas fa-envelope text-primary me-2"></i
+              >info@launchsphere.info</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <a href="#"
+              ><small class="me-3 text-dark"
+                ><i class="fa fa-user text-primary me-2"></i>Register</small
+              ></a
+            >
+            <a href="#"
+              ><small class="me-3 text-dark"
+                ><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small
+              ></a
+            >
+            <div class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle text-dark"
+                data-bs-toggle="dropdown"
+                ><small
+                  ><i class="fa fa-home text-primary me-2"></i> My
+                  Dashboard</small
+                ></a
+              >
+              <div class="dropdown-menu rounded">
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-user-alt me-2"></i> My Profile</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-comment-alt me-2"></i> Inbox</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-bell me-2"></i> Notifications</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-cog me-2"></i> Account Settings</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-power-off me-2"></i> Log Out</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="" class="navbar-brand p-0" style="display: flex">
+          <h1 class="text-primary">
+            <i class="fa-brands fa-uncharted me-3"></i>
+            Launch Sphere
+          </h1>
+          <!-- <img
+            src="img/brand-logo.png"
+            alt="Launch Sphere Logo"
+            style="height: 35px"
+          /> -->
+          <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <a href="price.html" class="nav-item nav-link">Price</a>
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+          </div>
+          <a
+            href="service.html"
+            class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0"
+            >Get Started</a
+          >
+        </div>
+      </nav>
+
+      <!-- Carousel Start -->
+      <div class="header-carousel owl-carousel">
+        <div class="header-carousel-item">
+          <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image" />
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row gy-0 gx-5">
+                <div class="col-lg-0 col-xl-5"></div>
+                <div class="col-xl-7 animated fadeInLeft">
+                  <div class="text-sm-center text-md-end">
+                    <h4 class="text-primary text-uppercase fw-bold mb-4">
+                      Welcome To Launch Sphere
+                    </h4>
+                    <h1 class="display-4 text-uppercase text-white mb-4">
+                      Elevate your business with high-impact digital solutions
+                    </h1>
+                    <p class="mb-5 fs-5">
+                      We deliver powerful digital solutions — from web and app
+                      development to SEO and digital marketing — all tailored to
+                      accelerate your business growth. Strengthen your online
+                      presence, expand your reach, and achieve real results with
+                      our expert team.
+                    </p>
+                    <div
+                      class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4"
+                    >
+                      <a
+                        class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2"
+                        href="about.html"
+                        >Learn More</a
+                      >
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center justify-content-md-end"
+                    >
+                      <h2 class="text-white me-2">Follow Us:</h2>
+                      <div class="d-flex justify-content-end ms-2">
+                        <a
+                          class="btn btn-md-square btn-light rounded-circle me-2"
+                          href=""
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a
+                          class="btn btn-md-square btn-light rounded-circle mx-2"
+                          href=""
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a
+                          class="btn btn-md-square btn-light rounded-circle mx-2"
+                          href=""
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a
+                          class="btn btn-md-square btn-light rounded-circle ms-2"
+                          href=""
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-carousel-item">
+          <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image" />
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row g-5">
+                <div class="col-12 animated fadeInUp">
+                  <div class="text-center">
+                    <h4 class="text-primary text-uppercase fw-bold mb-4">
+                      Welcome To Launch Sphere
+                    </h4>
+                    <h1 class="display-4 text-uppercase text-white mb-4">
+                      Fuel your business with high-ROI digital services
+                    </h1>
+                    <p class="mb-5 fs-5">
+                      Maximize your growth with expert web, app, SEO, and
+                      digital marketing solutions. Our results-driven strategies
+                      are designed to boost visibility, engagement, and revenue.
+                      Partner with us to transform your digital presence into a
+                      powerful business asset.
+                    </p>
+                    <div
+                      class="d-flex justify-content-center flex-shrink-0 mb-4"
+                    >
+                      <a
+                        class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2"
+                        href="about.html"
+                        >Learn More</a
+                      >
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <h2 class="text-white me-2">Follow Us:</h2>
+                      <div class="d-flex justify-content-end ms-2">
+                        <a
+                          class="btn btn-md-square btn-light rounded-circle me-2"
+                          href=""
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a
+                          class="btn btn-md-square btn-light rounded-circle mx-2"
+                          href=""
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a
+                          class="btn btn-md-square btn-light rounded-circle mx-2"
+                          href=""
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a
+                          class="btn btn-md-square btn-light rounded-circle ms-2"
+                          href=""
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Abvout Start -->
+    <div class="container-fluid about py-5">
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+            <div>
+              <h4 class="text-primary">About Us</h4>
+              <h1 class="display-5 mb-4">
+                Connect with us today and unlock your business’s full digital
+                potential
+              </h1>
+              <p class="mb-4">
+                Join hands with a team that delivers innovative web, app, SEO,
+                and digital marketing solutions. We help businesses like yours
+                scale faster, reach wider, and perform better online. Let’s
+                build your digital success — starting today.
+              </p>
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-6 col-xl-6">
+                  <div class="d-flex">
+                    <div>
+                      <i class="fas fa-lightbulb fa-3x text-primary"></i>
+                    </div>
+                    <div class="ms-4">
+                      <h4>Business Consuluting</h4>
+                      <p>
+                        We offer strategic digital consulting to help you choose
+                        the right technologies, optimize your online presence,
+                        and achieve your business goals efficiently.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6">
+                  <div class="d-flex">
+                    <div>
+                      <i
+                        class="bi bi-bookmark-heart-fill fa-3x text-primary"
+                      ></i>
+                    </div>
+                    <div class="ms-4">
+                      <h4>Year Of Expertise</h4>
+                      <p>
+                        With over years of industry experience, our team brings
+                        deep knowledge and proven success in web, app
+                        development, SEO, and digital marketing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a
+                    href="about.html"
+                    class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0"
+                    >Discover Now</a
+                  >
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex">
+                    <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
+                    <div>
+                      <h4>Call Us</h4>
+                      <p class="mb-0 fs-5" style="letter-spacing: 1px">
+                        (805) 248-2674
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="bg-primary rounded position-relative overflow-hidden">
+              <img
+                src="img/about-2.jpg"
+                class="img-fluid rounded w-100"
+                alt=""
+              />
+
+              <div
+                class=""
+                style="position: absolute; top: -15px; right: -15px"
+              ></div>
+              <div
+                class=""
+                style="
+                  position: absolute;
+                  top: -20px;
+                  left: 10px;
+                  transform: rotate(90deg);
+                "
+              ></div>
+              <div class="rounded-bottom">
+                <img
+                  src="img/about-5.webp"
+                  class="img-fluid rounded-bottom w-100"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid service pb-5">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Our Services</h4>
+          <h1 class="display-5 mb-4">
+            Our Services — Tailored Solutions, Best Value
+          </h1>
+          <p class="mb-0">
+            We deliver top-quality web, app, SEO, and digital marketing services
+            with competitive pricing and custom packages designed to give you
+            the best return on your investment.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/webdev.jpg"
+                  class="img-fluid rounded-top w-100"
+                  alt="Image"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <a href="#" class="h4 d-inline-block mb-4"> Web Development</a>
+                <p class="mb-4">
+                  We build fast, secure, and responsive websites tailored to
+                  your business goals and user needs.
+                </p>
+                <a
+                  class="btn btn-primary rounded-pill py-2 px-4"
+                  href="about.html"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/appdev.avif"
+                  class="img-fluid rounded-top w-100"
+                  alt="Image"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <a href="#" class="h4 d-inline-block mb-4">App Development</a>
+                <p class="mb-4">
+                  From concept to launch, we create high-performing mobile apps
+                  that deliver seamless user experiences.
+                </p>
+                <a
+                  class="btn btn-primary rounded-pill py-2 px-4"
+                  href="about.html"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/seo.jpg"
+                  class="img-fluid rounded-top w-100"
+                  alt="Image"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <a href="#" class="h4 d-inline-block mb-4"
+                  >Search Engine Optimization</a
+                >
+                <p class="mb-4">
+                  Boost your search rankings and drive organic traffic with our
+                  data-driven SEO strategies.
+                </p>
+                <a
+                  class="btn btn-primary rounded-pill py-2 px-4"
+                  href="about.html"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/digital-marketing.jpg"
+                  class="img-fluid rounded-top w-100"
+                  alt="Image"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <a href="#" class="h4 d-inline-block mb-4">Digital Marketing</a>
+                <p class="mb-4">
+                  Grow your brand online with targeted campaigns across social
+                  media, search engines, and more.
+                </p>
+                <a
+                  class="btn btn-primary rounded-pill py-2 px-4"
+                  href="about.html"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/uiux.webp"
+                  class="img-fluid rounded-top w-100"
+                  alt="Image"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <a href="#" class="h4 d-inline-block mb-4">UI/UX Design</a>
+                <p class="mb-4">
+                  We design intuitive, user-friendly interfaces that engage
+                  users and enhance usability.
+                </p>
+                <a
+                  class="btn btn-primary rounded-pill py-2 px-4"
+                  href="about.html"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="img/consultant.avif"
+                  class="img-fluid rounded-top w-100"
+                  alt="Image"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <a href="#" class="h4 d-inline-block mb-4">Consultancy</a>
+                <p class="mb-4">
+                  Get expert guidance to make smart, scalable tech decisions for
+                  your digital growth.
+                </p>
+                <a
+                  class="btn btn-primary rounded-pill py-2 px-4"
+                  href="about.html"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid feature pb-5">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Our Features</h4>
+          <h1 class="display-5 mb-4">
+            Empowering businesses through digital innovation and smart
+            solutions.
+          </h1>
+          <p class="mb-0">
+            We leverage innovative technology and smart strategies to help your
+            business grow online. From web and app development to SEO and
+            digital marketing, our tailored solutions drive real results and
+            lasting impact.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <div class="feature-icon p-4 mb-4">
+                <i class="fa-solid fa-laptop-code fa-4x text-primary"></i>
+              </div>
+              <h4>Custom Development</h4>
+              <p class="mb-4">
+                Tailored web and app solutions built to match your unique
+                business needs.
+              </p>
+              <a
+                class="btn btn-primary rounded-pill py-2 px-4"
+                href="about.html"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="feature-item p-4">
+              <div class="feature-icon p-4 mb-4">
+                <i class="fa-solid fa-bullhorn fa-4x text-primary"></i>
+              </div>
+              <h4>ROI-Focused Marketing</h4>
+              <p class="mb-4">
+                Data-driven SEO and digital marketing strategies that deliver
+                measurable results.
+              </p>
+              <a
+                class="btn btn-primary rounded-pill py-2 px-4"
+                href="about.html"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div class="feature-item p-4">
+              <div class="feature-icon p-4 mb-4">
+                <i class="fa-solid fa-arrow-trend-up fa-4x text-primary"></i>
+              </div>
+              <h4>Scalable Solutions</h4>
+              <p class="mb-4">
+                Flexible platforms designed to grow seamlessly with your
+                business and evolving needs.
+              </p>
+              <a
+                class="btn btn-primary rounded-pill py-2 px-4"
+                href="about.html"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="feature-item p-4">
+              <div class="feature-icon p-4 mb-4">
+                <i class="fa-solid fa-handshake fa-4x text-primary"></i>
+              </div>
+              <h4>Expert Consultation</h4>
+              <p class="mb-4">
+                Trusted advice to guide your digital strategy and technology
+                decisions for better outcomes.
+              </p>
+              <a
+                class="btn btn-primary rounded-pill py-2 px-4"
+                href="about.html"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Offer Start -->
+    <div class="container-fluid offer-section pb-5">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Our Offer</h4>
+          <h1 class="display-5 mb-4">Benefits We offer</h1>
+          <p class="mb-0">
+            We provide comprehensive digital solutions designed to accelerate
+            your business growth, improve efficiency, and maximize your return
+            on investment. Partnering with us means gaining access to
+            cutting-edge technology, expert guidance, and personalized services
+            that deliver measurable success.
+          </p>
+        </div>
+        <div class="row g-5 align-items-center">
+          <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="nav nav-pills bg-light rounded p-5">
+              <a
+                class="accordion-link p-4 active mb-4"
+                data-bs-toggle="pill"
+                href="#collapseOne"
+              >
+                <h5 class="mb-0">Increased Online Visibility</h5>
+              </a>
+              <a
+                class="accordion-link p-4 mb-4"
+                data-bs-toggle="pill"
+                href="#collapseTwo"
+              >
+                <h5 class="mb-0">Custom Solutions Tailored to Your Business</h5>
+              </a>
+              <a
+                class="accordion-link p-4 mb-4"
+                data-bs-toggle="pill"
+                href="#collapseThree"
+              >
+                <h5 class="mb-0">Cost Efficiency and Resource Optimization</h5>
+              </a>
+              <a
+                class="accordion-link p-4 mb-0"
+                data-bs-toggle="pill"
+                href="#collapseFour"
+              >
+                <h5 class="mb-0">Ongoing Support and Maintenance</h5>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s">
+            <div class="tab-content">
+              <div id="collapseOne" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                  <div class="col-md-7">
+                    <img
+                      src="img/offer-1.jpg"
+                      class="img-fluid w-100 rounded"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-md-5">
+                    <h1 class="display-5 mb-4">
+                      Reach Your Target Audience Effectively
+                    </h1>
+                    <p class="mb-4">
+                      Our proven SEO and digital marketing strategies boost your
+                      website’s ranking on search engines, attracting more
+                      qualified visitors. This enhanced visibility helps convert
+                      prospects into loyal customers, expanding your market
+                      reach.
+                    </p>
+                    <a
+                      class="btn btn-primary rounded-pill py-2 px-4"
+                      href="about.html"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div id="collapseTwo" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <div class="col-md-7">
+                    <img
+                      src="img/offer-2.jpg"
+                      class="img-fluid w-100 rounded"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-md-5">
+                    <h1 class="display-5 mb-4">
+                      Personalized Web & App Development
+                    </h1>
+                    <p class="mb-4">
+                      We craft bespoke web and mobile applications aligned with
+                      your business goals and user needs. This personalized
+                      approach improves engagement, user experience, and
+                      ultimately, your return on investment.
+                    </p>
+                    <a
+                      class="btn btn-primary rounded-pill py-2 px-4"
+                      href="about.html"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div id="collapseThree" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <div class="col-md-7">
+                    <img
+                      src="img/offer-3.jpg"
+                      class="img-fluid w-100 rounded"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-md-5">
+                    <h1 class="display-5 mb-4">
+                      Maximize ROI with Smart Investments
+                    </h1>
+                    <p class="mb-4">
+                      By leveraging cutting-edge technology and efficient
+                      workflows, we deliver high-impact solutions within your
+                      budget. This ensures you get the best value without
+                      compromising quality or performance.
+                    </p>
+                    <a
+                      class="btn btn-primary rounded-pill py-2 px-4"
+                      href="about.html"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div id="collapseFour" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <div class="col-md-7">
+                    <img
+                      src="img/offer-4.jpg"
+                      class="img-fluid w-100 rounded"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-md-5">
+                    <h1 class="display-5 mb-4">
+                      Reliable Partnership Beyond Launch
+                    </h1>
+                    <p class="mb-4">
+                      Our dedicated support team provides continuous monitoring,
+                      updates, and troubleshooting to keep your digital assets
+                      secure, functional, and up-to-date. This lets you focus on
+                      growing your business with confidence.
+                    </p>
+                    <a
+                      class="btn btn-primary rounded-pill py-2 px-4"
+                      href="about.html"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Offer End -->
+
+    <!-- FAQs Start -->
+    <div class="container-fluid faq-section pb-5">
+      <div class="container pb-5 overflow-hidden">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">FAQs</h4>
+          <h1 class="display-5 mb-4">Frequently Asked Questions</h1>
+          <p class="mb-0">
+            Have questions? We’re here to help! Find quick answers to common
+            inquiries about our services, processes, and how we can support your
+            business growth.
+          </p>
+        </div>
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+            <div
+              class="accordion accordion-flush bg-light rounded p-5"
+              id="accordionFlushSection"
+            >
+              <div class="accordion-item rounded-top">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    What services do you offer?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushSection"
+                >
+                  <div class="accordion-body">
+                    We provide web and app development, SEO, digital marketing,
+                    UI/UX design, and IT consultancy.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    How long does a typical project take?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushSection"
+                >
+                  <div class="accordion-body">
+                    Project timelines vary, but most web or app development
+                    projects take 4-12 weeks depending on complexity.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Do you offer customized solutions?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushSection"
+                >
+                  <div class="accordion-body">
+                    Yes! All our services are tailored to meet your unique
+                    business needs and goals.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    How do you ensure quality?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushSection"
+                >
+                  <div class="accordion-body">
+                    We follow industry best practices, conduct thorough testing,
+                    and maintain open communication throughout the project.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    Can you help improve our search engine rankings?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushSection"
+                >
+                  <div class="accordion-body">
+                    Absolutely! Our SEO experts use proven strategies to boost
+                    your online visibility and organic traffic.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item rounded-bottom">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSix"
+                  >
+                    What kind of support do you provide after project
+                    completion?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSix"
+                  data-bs-parent="#accordionFlushSection"
+                >
+                  <div class="accordion-body">
+                    We offer ongoing maintenance, updates, and technical support
+                    to ensure your platforms run smoothly.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="bg-primary rounded">
+              <img src="img/faq.jpg" class="img-fluid w-100" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQs End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid team pb-5">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Our Team</h4>
+          <h1 class="display-5 mb-4">Meet Our Advisers</h1>
+          <p class="mb-0">
+            Our advisers bring a wealth of industry experience and strategic
+            insight to help guide your business through digital transformation.
+            With expertise spanning technology, marketing, and business growth,
+            they ensure you make informed decisions for lasting success.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-1.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="team-title">
+                <h4 class="mb-0">David James</h4>
+                <p class="mb-0">Chief Technology Adviser</p>
+              </div>
+              <div class="team-icon">
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-0"
+                  href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-2.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="team-title">
+                <h4 class="mb-0">William Hayes</h4>
+                <p class="mb-0">Digital Marketing Strategist</p>
+              </div>
+              <div class="team-icon">
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-0"
+                  href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-3.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="team-title">
+                <h4 class="mb-0">James Collins</h4>
+                <p class="mb-0">Business Growth Consultant</p>
+              </div>
+              <div class="team-icon">
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-0"
+                  href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-4.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="team-title">
+                <h4 class="mb-0">Emily Parker</h4>
+                <p class="mb-0">UI/UX Expert</p>
+              </div>
+              <div class="team-icon">
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-0"
+                  href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial pb-5">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Testimonial</h4>
+          <h1 class="display-5 mb-4">Our Clients Riviews</h1>
+          <p class="mb-0">
+            We take pride in delivering quality, results-driven digital
+            solutions. Here’s what some of our clients have to say about their
+            experience working with us — from startups to growing enterprises,
+            our commitment to excellence remains the same.
+          </p>
+        </div>
+        <div
+          class="owl-carousel testimonial-carousel wow fadeInUp"
+          data-wow-delay="0.2s"
+        >
+          <div class="testimonial-item">
+            <div class="testimonial-quote-left">
+              <i class="fas fa-quote-left fa-2x"></i>
+            </div>
+            <div class="testimonial-img">
+              <img src="img/testimonial-1.jpg" class="img-fluid" alt="Image" />
+            </div>
+            <div class="testimonial-text">
+              <p class="mb-0">
+                Their web development team built a sleek, fast-loading site that
+                perfectly reflects my brand. I saw a 40% increase in traffic
+                within the first month!
+              </p>
+            </div>
+            <div class="testimonial-title">
+              <div>
+                <h4 class="mb-0">Sophia Bennett</h4>
+                <p class="mb-0">Founder, Luxe Beauty Co.</p>
+              </div>
+              <div class="d-flex text-primary">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-quote-right">
+              <i class="fas fa-quote-right fa-2x"></i>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-quote-left">
+              <i class="fas fa-quote-left fa-2x"></i>
+            </div>
+            <div class="testimonial-img">
+              <img src="img/testimonial-2.jpg" class="img-fluid" alt="Image" />
+            </div>
+            <div class="testimonial-text">
+              <p class="mb-0">
+                The SEO and digital marketing strategy they implemented gave us
+                amazing visibility online. Our leads and conversions have
+                doubled!
+              </p>
+            </div>
+            <div class="testimonial-title">
+              <div>
+                <h4 class="mb-0">Rachel Moore</h4>
+                <p class="mb-0">Marketing Director, UrbanReach Agency</p>
+              </div>
+              <div class="d-flex text-primary">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-quote-right">
+              <i class="fas fa-quote-right fa-2x"></i>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-quote-left">
+              <i class="fas fa-quote-left fa-2x"></i>
+            </div>
+            <div class="testimonial-img">
+              <img src="img/testimonial-3.jpg" class="img-fluid" alt="Image" />
+            </div>
+            <div class="testimonial-text">
+              <p class="mb-0">
+                Their consultancy and tech expertise helped us overcome scaling
+                issues. We now run smoother, faster, and with better results
+                than ever.
+              </p>
+            </div>
+            <div class="testimonial-title">
+              <div>
+                <h4 class="mb-0">Daniel Carter</h4>
+                <p class="mb-0">CTO, NovaTech Solutions</p>
+              </div>
+              <div class="d-flex text-primary">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-quote-right">
+              <i class="fas fa-quote-right fa-2x"></i>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-quote-left">
+              <i class="fas fa-quote-left fa-2x"></i>
+            </div>
+            <div class="testimonial-img">
+              <img src="img/testimonial-2.jpg" class="img-fluid" alt="Image" />
+            </div>
+            <div class="testimonial-text">
+              <p class="mb-0">
+                From the very first meeting, they understood my vision. The app
+                they delivered was beyond my expectations—clean, easy to use,
+                and loved by our customers.
+              </p>
+            </div>
+            <div class="testimonial-title">
+              <div>
+                <h4 class="mb-0">Emma Scott</h4>
+                <p class="mb-0">Owner, FreshBite Café</p>
+              </div>
+              <div class="d-flex text-primary">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-quote-right">
+              <i class="fas fa-quote-right fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+      <div
+        class="container py-5 border-start-0 border-end-0"
+        style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08)"
+      >
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-6 col-xl-4">
+            <div class="footer-item">
+              <!-- <a href="index.html" class="p-0 logo-text">
+                <h4 class="text-white">
+                  <i class="fa-brands fa-uncharted me-3"></i>Launch Sphere
+                </h4>
+              </a> -->
+              <h1 class="text-primary">
+                <i class="fa-brands fa-uncharted me-3"></i>
+                Launch Sphere
+              </h1>
+
+              <p class="mb-4">
+                Building powerful websites, mobile apps, and smart digital
+                solutions that grow your business.
+              </p>
+              <div class="d-flex">
+                <a
+                  href="#"
+                  class="bg-primary d-flex rounded align-items-center py-2 px-3 me-2"
+                >
+                  <i class="fas fa-apple-alt text-white"></i>
+                  <div class="ms-3">
+                    <small class="text-white">Download on the</small>
+                    <h6 class="text-white">App Store</h6>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2"
+                >
+                  <i class="fas fa-play text-primary"></i>
+                  <div class="ms-3">
+                    <small class="text-white">Get it on</small>
+                    <h6 class="text-white">Google Play</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-2">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">Quick Links</h4>
+              <a href="#"><i class="fas fa-angle-right me-2"></i>Home</a>
+              <a href="about.html"
+                ><i class="fas fa-angle-right me-2"></i>About Us</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> Services</a
+              >
+              <a href="FAQ.html"
+                ><i class="fas fa-angle-right me-2"></i> FAQs</a
+              >
+              <a href="terms-of-service.html"
+                ><i class="fas fa-angle-right me-2"></i> Terms of service</a
+              >
+              <a href="privacy-policy.html"
+                ><i class="fas fa-angle-right me-2"></i> Privacy policy</a
+              >
+              <a href="contact.html"
+                ><i class="fas fa-angle-right me-2"></i> Contact us</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">Services</h4>
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> Web Development</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> App Development</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> SEO</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> Digital Marketing</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> UI/UX</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> Software Consulting</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">Contact Info</h4>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                <p class="text-white mb-0">
+                  3765 Shinn St, Manhattan, NY 10016, USA
+                </p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-envelope text-primary me-3"></i>
+                <p class="text-white mb-0">
+                  <a
+                    href="mailto:info@launchsphere.info"
+                    class="text-white text-decoration-none"
+                    >info@launchsphere.info</a
+                  >
+                </p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fa fa-phone-alt text-primary me-3"></i>
+                <a
+                  href="tel:++18052482674"
+                  class="text-white mb-0 text-decoration-none"
+                  >(805) 248-2674</a
+                >
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <i class="fab fa-firefox-browser text-primary me-3"></i>
+                <p class="text-white mb-0">
+                  <a
+                    href="https://launchsphere.info"
+                    class="text-white text-decoration-none"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    launchsphere.info
+                  </a>
+                </p>
+              </div>
+              <div class="d-flex">
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href="#"
+                  ><i class="fab fa-facebook-f text-white"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href="#"
+                  ><i class="fab fa-twitter text-white"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-3"
+                  href="#"
+                  ><i class="fab fa-instagram text-white"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square rounded-circle me-0"
+                  href="#"
+                  ><i class="fab fa-linkedin-in text-white"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-md-0">
+            <span class="text-body"
+              ><a href="#" class="border-bottom text-white"
+                ><i class="fas fa-copyright text-light me-2"></i>Launch
+                Sphere</a
+              >, All right reserved.</span
+            >
+          </div>
+          <div class="col-md-6 text-center text-md-end text-body">
+            Designed By
+            <a class="border-bottom text-white">Launch Sphere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Security -->
+  </body>
+</html>
